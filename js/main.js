@@ -31,3 +31,23 @@ for (let i = 0; i < imgArray.length; i++) {
     // inseriamo il nuovo elemento nel contenitore
     itemsContainet.innerHTML += itemContent;
 }
+
+// seleziono tutti gli elementi item in pagina
+const items = document.getElementsByClassName("item");
+// console.log(items);ù
+
+let activeItems = 0;
+
+// mettere classe active al primo elemento
+items[0].classList.add("active");
+console.log(items[0]);
+
+// selezione il bottone
+const next = document.querySelector(".next");
+console.log(next);
+
+// gestione al click next
+
+// incremento il valore dell'indice /activeItems
+
+// andiamo a mettere la classe active all elemento corrisoondente all'inidce aggironato
