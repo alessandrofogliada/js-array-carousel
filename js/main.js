@@ -13,7 +13,7 @@ const imgArray = [
 
  // prendo elemento contenitore
 
- const itemsContainet = document.querySelector(".item-container")
+ const itemsContainer = document.querySelector(".item-container")
 
 //  estrapolo elementi array img
 
@@ -29,22 +29,36 @@ for (let i = 0; i < imgArray.length; i++) {
             </div>`;
 
     // inseriamo il nuovo elemento nel contenitore
-    itemsContainet.innerHTML += itemContent;
+    itemsContainer.innerHTML += itemContent;
 }
 
 // seleziono tutti gli elementi item in pagina
 const items = document.getElementsByClassName("item");
-// console.log(items);ù
+// console.log(items);
 
 let activeItems = 0;
 
-// mettere classe active al primo elemento
-items[0].classList.add("active");
-console.log(items[0]);
+// aggiungiamo classe active all'elemento
+
+items[activeItems].classList.add("active");
 
 // selezione il bottone
 const next = document.querySelector(".next");
-console.log(next);
+
+// mettere classe active al primo elemento
+next.addEventListener("click",
+    function(){
+        items[activeItems].classList.add("active");
+        activeItems++;
+        items[activeItems.classList.add("active")];
+    }
+  
+    
+)
+
+
+
+
 
 // gestione al click next
 

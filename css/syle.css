@@ -47,3 +47,10 @@
 .fa-arrow-down{
   top: 400px;
 }
+
+.next{
+    height:60px;
+    width: 100px;
+    cursor: pointer;
+    background-color: blue;
+}
